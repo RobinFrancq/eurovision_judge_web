@@ -36,7 +36,6 @@ export function initializeEurovisionJudgeApp(appInitService: AppInitService) {
         deps: [HttpClient]
       }
     }),
-    FormsModule,
     ReactiveFormsModule
   ],
   providers: [

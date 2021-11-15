@@ -11,6 +11,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppInitService } from './services/app-init.service';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 export function initializeEurovisionJudgeApp(appInitService: AppInitService) {
   return (): Promise<any> => { 
@@ -36,7 +38,9 @@ export function initializeEurovisionJudgeApp(appInitService: AppInitService) {
         deps: [HttpClient]
       }
     }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     AppInitService,

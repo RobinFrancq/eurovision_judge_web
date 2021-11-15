@@ -2,5 +2,13 @@
     "login": "login",
     "username": "gebruikersnaam",
     "password": "wachtwoord",
-    "register": "registreer"
+    "register": "registreer",
+    "oops": "oeps...",
+    "hooray": "hoera",
+    "youAreLoggedIn": "U bent ingelogd",
+    "exceptionMessage": {
+        "USER_NOT_FOUND_EXCEPTION": "We konden de gebruiker niet terugvinden",
+        "WRONG_CREDENTIALS_EXCEPTION": "Het wachtwoord is onjuist",
+        "USER_ALREADY_EXISTS_EXCEPTION": "De gebruiker bestaat al"
+    }
 }

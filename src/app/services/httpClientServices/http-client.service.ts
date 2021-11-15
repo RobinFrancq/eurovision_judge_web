@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HttpClientService {
 
-  protected baseUrl: string = environment.apiBaseUrl;
+  constructor(){}
 
-  constructor() { }
+  protected baseUrl: string = environment.apiBaseUrl;
 }
